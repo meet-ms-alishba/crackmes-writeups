@@ -1,6 +1,6 @@
 # Multi-layer Password Check — by Mazzotti
 
-**Difficulty:** ~1.5–1.8
+**Difficulty:** 1.8
 **Category:** Reverse Engineering / C++ Logic Analysis
 **Tools used:** Ghidra, objdump, GDB (blocked by anti-debug), custom Ghidra-to-LLM decompiler cleanup tool (My tool Link in github)
 
