@@ -1,9 +1,5 @@
 # crackmes-writeups
 My First step towards Reverse Engineering
-## Tools
-- Ghidra
-- GDB + GEF
-- objdump
 
 ## Crackmes
 
