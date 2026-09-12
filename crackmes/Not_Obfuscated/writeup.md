@@ -1,4 +1,15 @@
-Challenge Overview The target binary not_obfuscated is a stripped 64-bit Linux ELF binary. Despite its name, it employs a combination of dynamic runtime unpacking via mprotect and an internal execution engine—specifically, a custom stack-based Clac VM interpreter running a pre-trained MNIST Neural Network for input validation.Phase 1: Triage & ReconnaissanceInitial analysis using standard Linux tools revealed protection mechanisms and indications of dynamic payload unpacking:Bash$ file crackme
+## Challenge Overview
+
+The target binary `not_obfuscated` is a stripped 64-bit Linux ELF binary. Despite its name, it employs a combination of dynamic runtime unpacking via `mprotect` and an internal execution engine—specifically, a custom stack-based **Clac VM interpreter** running a pre-trained **MNIST Neural Network** for input validation.
+
+---
+
+## Phase 1: Triage & Reconnaissance
+
+Initial analysis using standard Linux tools revealed protection mechanisms and indications of dynamic payload unpacking:
+
+```bash
+$ file crackme
 crackme: ELF 64-bit LSB pie stripped executable, x86-64, version 1 (SYSV), dynamically linked
 
 $ checksec --file=crackme
