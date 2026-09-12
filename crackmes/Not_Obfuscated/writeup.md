@@ -61,4 +61,5 @@ The Clac VM ArchitectureThe decrypted payload implements an interpreter for Clac
 Execution ResultBash$ ./crackme < input.txt
 password:
 correct!
-Summary & Key TakeawaysUnpacking Strategy: When encountering mmap + memcpy + mprotect patterns, place breakpoints right before memory permission transitions (PROT_EXEC) to dump clean payload dumps.Interpreter Obfuscation: The presence of custom stack loops and opcode error strings signals a VM-based interpreter wrapper.Static vs Dynamic Logic: Neural networks inside binaries function as deterministic math formulas ($W \cdot X + b$). Reversing them relies on extracting the input schema rather than analyzing raw neural weights.
+## Summary & Key Takeaways Unpacking Strategy:
+When encountering mmap + memcpy + mprotect patterns, place breakpoints right before memory permission transitions (PROT_EXEC) to dump clean payload dumps.Interpreter Obfuscation: The presence of custom stack loops and opcode error strings signals a VM-based interpreter wrapper.Static vs Dynamic Logic: Neural networks inside binaries function as deterministic math formulas ($W \cdot X + b$). Reversing them relies on extracting the input schema rather than analyzing raw neural weights.
